@@ -23,11 +23,11 @@ app.use(ordersRouter)
 
 
 app.get('/', (req, res) => {
-	res.send('Hello World!');
+	res.send('<h1>Server API Root...</h1>');
 });
 
 app.get('/api', function (req, res) {
-    res.send('Hello World!');
+    res.send('<h1>Server API Root...</h1>');
   });
 
 app.listen(5000, 'localhost', () =>  {
