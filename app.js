@@ -8,6 +8,7 @@ var router = express.Router();
 
 const productRouter = require('./routes/product.js')
 const ordersRouter = require('./routes/order.js')
+const userRouter = require('./routes/user.js')
 
 //app.use(express.static('./public'))
 app.use(bodyParser.urlencoded({ extended: false }))
@@ -20,6 +21,7 @@ app.use('/api', router);
 
 app.use(productRouter)
 app.use(ordersRouter)
+app.use(userRouter)
 
 
 app.get('/', (req, res) => {
